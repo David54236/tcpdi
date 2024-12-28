@@ -39,6 +39,8 @@
 //
 //============================================================+
 
+namespace propa\tcpdi;
+
 /**
  * @file
  * This is a PHP class for parsing PDF documents.<br>
@@ -186,7 +188,7 @@ class tcpdi_parser {
         // get length
         $pdflen = strlen($this->pdfdata);
         // initialize class for decoding filters
-        $this->FilterDecoders = new TCPDF_FILTERS();
+        $this->FilterDecoders = new \TCPDF_FILTERS();
         // get xref and trailer data
         $this->xref = $this->getXrefData();
         $this->findObjectOffsets();
@@ -1446,7 +1448,7 @@ class tcpdi_parser {
 
 } // END OF TCPDF_PARSER CLASS
 
-class TcpdiParserException extends Exception {}
+class TcpdiParserException extends \Exception {}
 
 //============================================================+
 // END OF FILE

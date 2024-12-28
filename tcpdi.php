@@ -18,8 +18,10 @@
 //  limitations under the License.
 //
 
+namespace propa\tcpdi;
+
 // Dummy shim to allow unmodified use of fpdf_tpl
-class FPDF extends TCPDF {}
+class FPDF extends \TCPDF {}
 
 require_once('fpdf_tpl.php');
 

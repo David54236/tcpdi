@@ -17,6 +17,8 @@
 //  limitations under the License.
 //
 
+namespace propa\tcpdi;
+
 class FPDF_TPL extends FPDF
 {
     /**
